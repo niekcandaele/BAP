@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - "thesis/*"
+  pull_request:
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
