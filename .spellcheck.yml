@@ -1,0 +1,7 @@
+matrix:
+  - name: Thesis
+    aspell:
+      lang: en
+      d: en_US
+    sources:
+      - thesis/**/*.tex
