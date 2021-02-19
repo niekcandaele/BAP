@@ -21,6 +21,37 @@ Gatsby\footnote{https://www.gatsbyjs.com/} is a static site generator at heart. 
 
 %----------------------------------------------------------------------------------------
 
+\section{Deployment configuration}
+
+\subsection{Store inside CMS}
+
+This is a low-effort solution. The idea is to create a deployment schema config with well-defined properties. We use this schema as a content model inside the CMS.
+
+Positive:
+
+\begin{itemize}
+	\item Non-development teams get a nice interface to change things while still using a controlled schema
+	\item No need to create a custom frontend for this
+	\item Very flexible, easy to add or change properties
+\end{itemize}
+
+Negative:
+
+\begin{itemize}
+	\item Very flexible, easy to create broken configurations if we do not properly validate.
+	\item The CMS becomes an even more important part of the technology stack. I consider this a negative because currently Stampix uses a proprietary, closed source service.
+\end{itemize}
+
+
+\subsection{Storybook}
+
+Stampix is using Storybook\footnote{https://storybook.js.org/} to create a component library for the mobile application. With Storybook, the operations team can change some parameters and then export a configuration.
+This is nice because Storybook provides a sort of sandbox to play around and design a deployment, completely separated from any cloud resources.
+
+Problem with this is that Storybook focuses mostly on styling. We need more than just styling.
+
+%----------------------------------------------------------------------------------------
+
 \section{Automated testing}
 
 We create lots of different webapps, a different one for each client. Currently, we have no automated tests. This should change
