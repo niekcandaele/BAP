@@ -1,0 +1,26 @@
+name: Week reports
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "59 23 * * 5"
+  push:
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: weekReports
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm ci
+      - run: node index.js
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - run: git config user.email "niekcandaele@gmail.com"
+      - run: git config user.name "niekcandaele"
+      - run: git add weekReports/reports/*.md
+      - run: git diff-index --quiet HEAD || (git commit -m "Update weekly reports" && git push)
