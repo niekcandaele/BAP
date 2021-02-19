@@ -62,12 +62,12 @@ An additional pain point here is that the structure of the data is still manuall
 
 Domain name (company.stampix.com), length of the campaign, total amount of prints bought, \dots
 
-This should be a semi-structured document which can be easily edited by non-development teams which will then get sent to our IaC solution.
+This should be a semi-structured document which can be easily edited by non-development teams which will be our IaC solution to create deployments.
 
 \subsection{Deployment stages}
 
 There should be a clear distinction between deployments in production, staging or test. 
-A common occurence right now is that the sales team will create demo's to use during their pitches. This has the risk that they change some config which breaks production apps. These demo's also get made, pitched and then prompty forgotten, never to be used again.
+A common occurence right now is that the sales team will create demo's to use during their pitches. This has the risk that they change some configuration which breaks production apps. These demo's also get made, pitched and then promptly forgotten, never to be used again.
 
 \begin{itemize}
 	\item Production: deployments that are live, in actual use.
