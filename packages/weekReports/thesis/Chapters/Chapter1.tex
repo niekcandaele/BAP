@@ -60,9 +60,19 @@ An additional pain point here is that the structure of the data is still manuall
 
 \subsection{Deployment configuration}
 
-Domain name (company.stampix.com), length of the campaign, total amount of prints bought, \dots
+All the following is currently stored inside the CMS but define a configuration of the deployment.
 
-This should be a semi-structured document which can be easily edited by non-development teams which will be our IaC solution to create deployments.
+\begin{itemize}
+	\item Domain name (company.stampix.com).
+	\item Campaign ID (corresponds to an ID in the database)
+	\item Demo mode (No real codes needed but nothing gets printed either)
+	\item googleAnalyticsTrackingCode
+	\item facebookPixelId
+\end{itemize}
+
+Ideally, we can keep track of these variables separately from the regular assets. While the distinction is hard to make right now, some of these values are needed outside the statically generated app. For example, we'll need to domain name to set up DNS.
+
+This should be a (semi) structured document which can be easily edited by non-development teams and finally sent to our IaC solution to create deployments.
 
 \subsection{Deployment stages}
 
