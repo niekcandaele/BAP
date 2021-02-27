@@ -18,24 +18,32 @@ async function main() {
 
     console.log(`Getting commits since ${since.toISOString()}`);
 
-    const stampixRepos = await octokit.repos.listForOrg({ org: 'stampix' });
-
+    const stampixRepos = await octokit.repos.listForOrg({ org: 'stampix', });
     // Get all my commits in Stampix repos
     for (const repo of stampixRepos.data) {
-        let commits = await octokit.repos.listCommits({
+        const branches = await octokit.repos.listBranches({
             owner: 'stampix',
             repo: repo.name,
-            author: 'niekcandaele@gmail.com',
-            since
-        });
-        commits = commits.data.map(c => {
-            return {
-                date: new Date(c.commit.committer.date),
-                message: c.commit.message,
-                repo: `stampix/${repo.name}`
-            }
         })
-        commitsData = commitsData.concat(commits)
+
+        for (const branch of branches.data) {
+            let commits = await octokit.repos.listCommits({
+                owner: 'stampix',
+                repo: repo.name,
+                author: 'niekcandaele@gmail.com',
+                sha: branch.name,
+                since
+            });
+            commits = commits.data.map(c => {
+                return {
+                    date: new Date(c.commit.committer.date),
+                    message: c.commit.message,
+                    repo: `stampix/${repo.name}/${branch.name}`
+                }
+            })
+            console.log(`Found ${commits.length} commits for repo ${repo.name} on branch ${branch.name}`);
+            commitsData = commitsData.concat(commits)
+        }
     }
 
     // Get my commits in BAP repo
