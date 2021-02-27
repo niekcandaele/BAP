@@ -32,6 +32,7 @@ async function main() {
                 repo: repo.name,
                 author: 'niekcandaele@gmail.com',
                 sha: branch.name,
+                per_page: 100,
                 since
             });
             commits = commits.data.map(c => {
