@@ -63,6 +63,7 @@ async function main() {
     })
     commitsData = commitsData.concat(commits)
 
+    commitsData = getUniqueCommits(commitsData)
     console.log(`Found ${commitsData.length} commits, you busy bee!`);
 
     commitsData = commitsData
@@ -82,3 +83,15 @@ async function main() {
 }
 
 main().catch(console.error)
+
+
+function getUniqueCommits(array) {
+    let ids = new Set();
+    return array.filter(function (item) {
+        if (!ids.has(item.message)) {
+            ids.add(item.message);
+            return true;
+        }
+        return false;
+    });
+}
