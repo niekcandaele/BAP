@@ -3,6 +3,8 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron: "59 23 * * 5"
+  workflow_dispatch:
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
