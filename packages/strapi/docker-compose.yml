@@ -1,0 +1,19 @@
+version: "3"
+services:
+  strapi:
+    image: strapi/strapi
+    env_file: .env.strapi
+    links:
+      - postgres:postgres
+    volumes:
+      - ./data/strapi:/srv/app
+    ports:
+      - "127.0.0.1:1337:1337"
+
+  postgres:
+    image: postgres
+    env_file: .env.strapi
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    #ports:
+    #  - "127.0.0.1:5432:5432"
