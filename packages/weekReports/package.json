@@ -1,10 +1,16 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  },
+  "name": "weekreports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lerna": "lerna"
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^18.2.0",
+    "dotenv": "^8.2.0",
+    "handlebars": "^4.7.7"
   }
 }
