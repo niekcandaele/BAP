@@ -11,10 +11,7 @@ const pageStyles = {
 
 // markup
 const IndexPage = ({ data }) => {
-  console.log(data);
-  console.log(data.strapiCampaign.mainImage);
   const image = getImage(data.strapiCampaign.mainImage)
-  console.log(image);
   return (
     <main style={pageStyles}>
       <p>Hey! This is a Gatsby site for the "{data.strapiCampaign.Name}" campaign</p>
