@@ -30,7 +30,7 @@ async function main() {
             let commits = await octokit.repos.listCommits({
                 owner: 'stampix',
                 repo: repo.name,
-                author: 'niekcandaele@gmail.com',
+                author: 'niek@candaele.dev',
                 sha: branch.name,
                 per_page: 100,
                 since
