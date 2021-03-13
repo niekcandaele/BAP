@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  benchmark:
+    build: ./packages/benchmark
+    depends_on: 
+      - strapi
+  strapi:
+    image: strapi/strapi
+    env_file: ./packages/strapi/.env.strapi
+    links:
+      - postgres:postgres
+    volumes:
+      - ./packages/strapi/data/strapi:/srv/app
+    ports:
+      - "127.0.0.1:1337:1337"
+    depends_on: 
+      - postgres
+  postgres:
+    image: postgres
+    env_file: ./packages/strapi/.env.strapi
+    volumes:
+      - ./packages/strapi/data/postgres:/var/lib/postgresql/data
+    #ports:
+    #  - "127.0.0.1:5432:5432"
+
+  gatsby:
+    build: ./packages/gatsby
+    depends_on: 
+      - strapi
