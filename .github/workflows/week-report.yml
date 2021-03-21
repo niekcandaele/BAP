@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: weekReports
+        working-directory: packages/weekReports
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2

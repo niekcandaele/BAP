@@ -1,0 +1,32 @@
+{
+  "name": "benchmark",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "niekcandaele <niek@candaele.dev>",
+  "homepage": "https://github.com/niekcandaele/BAP#readme",
+  "license": "ISC",
+  "main": "lib/benchmark.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niekcandaele/BAP.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "cypress:open": "cypress open",
+    "docker:build": "docker build . -t niekcandaele/bap-benchmark",
+    "start": "docker run niekcandaele/bap-benchmark"
+  },
+  "bugs": {
+    "url": "https://github.com/niekcandaele/BAP/issues"
+  },
+  "dependencies": {
+    "cypress": "^6.6.0"
+  }
+}
