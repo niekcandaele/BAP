@@ -1,103 +1,27 @@
-\chapter{Research} % Main chapter title
+% Chapter Template
+
+\chapter{Defining the problem} % Main chapter title
 
 \label{Chapter2} 
 
-
-\section{Static site generators}
-
-Static site generators take your app and build in before serving to users. 
-This means users receive plain HTML files. This moves a large computation burden from run time to build time which results in significantly faster load times for users.
-Furthermore, this approach allows for more aggressive and efficient caching.
-
-\subsection{Nextjs}
-
-Nextjs\footnote{https://nextjs.org/} is a React framework. Not explicitly a static site generator but has support for it
-
-\subsection{Gatsby}
-
-Gatsby\footnote{https://www.gatsbyjs.com/} is a static site generator at heart. It might be harder to do runtime stuff with Gatsby
-
-\subsection{Umi.js}
-
+%----------------------------------------------------------------------------------------
+%	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Deployment configuration}
+\section{Performance}
 
-\subsection{Store inside CMS}
+One of the main bottlenecks with the current approach is the requests to the CMS. When a user visits the site, they first have to load the basic static files from the server. 
+This will only load a skeleton of the application though. Depending on what domain name the user is visiting (companyX.stampix.com or companyY.stampix.com), the application will send requests to the CMS to load appropriate images and texts.
 
-This is a low-effort solution. The idea is to create a deployment schema config with well-defined properties. We use this schema as a content model inside the CMS.
+This whole process results in a long time before the user can actually start using the application. We aim to create a solution that will make this significantly faster.
 
-Positive:
+\section{Modularity}
 
-\begin{itemize}
-	\item Non-development teams get a nice interface to change things while still using a controlled schema
-	\item No need to create a custom frontend for this
-	\item Very flexible, easy to add or change properties
-\end{itemize}
-
-Negative:
-
-\begin{itemize}
-	\item Very flexible, easy to create broken configurations if we do not properly validate.
-	\item The CMS becomes an even more important part of the technology stack. I consider this a negative because currently Stampix uses a proprietary, closed source service.
-\end{itemize}
-
-
-\subsection{Storybook}
-
-Stampix is using Storybook\footnote{https://storybook.js.org/} to create a component library for the mobile application. With Storybook, the operations team can change some parameters and then export a configuration.
-This is nice because Storybook provides a sort of sandbox to play around and design a deployment, completely separated from any cloud resources.
-
-Problem with this is that Storybook focuses mostly on styling. We need more than just styling.
-
-%----------------------------------------------------------------------------------------
-
-\section{Automated testing}
-
-We create lots of different webapps, a different one for each client. Currently, we have no automated tests. This should change
-
-Automated testing gives developers confidence their changes did not break anything. It can spot bugs before the code is even released
-
-A lot of the following tools do very similar things, they emulate or run a browser and we can instruct it to do certain actions on our site after which we can assert if the application is behaving correctly.
-
-
-
-// TODO: Since most of these tools are/do basically the same thing, we should def focus on the differences between them.
-
-\subsection{Selenium}
-
-Selenium\footnote{https://www.selenium.dev/} is an established project
-
-\subsection{Cypress}
-
-Cypress\footnote{https://www.cypress.io/} is pretty new and 'cool' 
-
-\subsection{Protractor}
-
-\subsection{Playwright}
-
-Playwright\footnote{https://playwright.dev/} is
-
-%----------------------------------------------------------------------------------------
+Stampix has many clients and every client has individual needs. One client might want to block any NSFW pictures while another doesn't mind these types of pictures and instead wants different functionality.
+This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this thesis. 
+However, it is an important point and we must make sure the solution we create can support this.
 
 \section{Deployment}
 
-We will be deploying lots of apps for different customers. It's important that we can do this as rapidly and effortlessly as possible.
-This means we should adopt infrastructure as code as much as possible. There's a number of tools available, I will talk about some of the big players.
-
-\subsection{Ansible}
-
-Ansible\footnote{https://www.ansible.com/} is an agentless automation tool. Ansible connects via SSH to a number of hosts you specify and executes tasks on those hosts. 
-It offers a range of powerful tools and a strong ecosystem. Ansible focuses mostly on configuration management.
-
-While there are a few community and official AWS-related plugins available, I don't think Ansible is a good tool for this project. 
-Ansible is built around SSH connections and our system will have (practically) no SSH-capable machines.
-
-\subsection{Terraform}
-
-Terraform \footnote{https://www.terraform.io/} is a infrastructure as code tool. In contrast to Ansible, 
-Terraform focuses mostly on infrastructure tasks like creating virtual machines or allocating cloud resources.
-
-\subsection{Serverless}
-\subsection{AWS Cloud Development Kit}
-\subsection{Cloudformation}
+To support different assets for different clients, the current implementation loads the assets during runtime. 
+If we move loading assets from runtime to build time with a static site generator, we will need to develop a methodology for deploying the application.
