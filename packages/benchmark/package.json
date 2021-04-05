@@ -27,6 +27,7 @@
     "url": "https://github.com/niekcandaele/BAP/issues"
   },
   "dependencies": {
-    "cypress": "^6.6.0"
+    "cypress": "^6.6.0",
+    "cypress-audit": "^0.3.0"
   }
 }

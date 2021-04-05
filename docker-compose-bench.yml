@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  benchmark:
+    build: ./packages/benchmark
+    depends_on: 
+      - gatsby
+  gatsby:
+    build: 
+      context: ./packages/gatsby
+      network: host
+    ports:
+      - "127.0.0.1:3001:80"
