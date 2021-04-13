@@ -11,3 +11,11 @@ services:
       network: host
     ports:
       - "127.0.0.1:3001:80"
+  next:
+    build: 
+      context: ./packages/nextjs
+      network: host
+    environment: 
+      NEXT_PUBLIC_STRAPI_API_URL: http://127.0.0.1:1337
+    ports:
+      - "127.0.0.1:3002:3000"
