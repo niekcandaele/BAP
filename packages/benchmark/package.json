@@ -20,6 +20,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "docker:build": "docker build . -t niekcandaele/bap-benchmark",
     "start": "docker run niekcandaele/bap-benchmark"
   },

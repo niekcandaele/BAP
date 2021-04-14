@@ -1,10 +1,13 @@
 version: "3.4"
 
 services:
-  benchmark:
-    build: ./packages/benchmark
-    depends_on: 
-      - gatsby
+  #benchmark:
+  #  build: ./packages/benchmark
+  #  depends_on: 
+  #    - gatsby
+  #    - next
+  #  volumes: 
+  #    - ./reports:/reports
   gatsby:
     build: 
       context: ./packages/gatsby

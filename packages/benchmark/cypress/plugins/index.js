@@ -25,12 +25,15 @@ module.exports = (on, config) => {
 
   on("task", {
     lighthouse: lighthouse(async (lighthouseReport) => {
-      console.log(lighthouseReport); // raw lighthouse reports
-      await fs.writeFile('./reports/lighthouse.json', JSON.stringify(lighthouseReport, null, 4))
+      console.log(`LIGHTHOUSE REPORT FINISHED, SAVING`);
+      console.log(__dirname)
+      const sanitizedName = lighthouseReport.lhr.finalUrl.split('/').join('') // forward slashes confusing path 
+      await fs.writeFile(`./reports/${sanitizedName}-lighthouse.json`, JSON.stringify(lighthouseReport, null, 4))
     }),
     pa11y: pa11y(async (pa11yReport) => {
-      console.log(pa11yReport); // raw pa11y reports
-      await fs.writeFile('./reports/pa11y.json', JSON.stringify(pa11yReport, null, 4))
+      console.log(`PA11REPORT REPORT FINISHED, SAVING`);
+      const sanitizedName = pa11yReport.pageUrl.split('/').join('') // forward slashes confusing path 
+      await fs.writeFile(`./reports/${sanitizedName}-pa11y.json`, JSON.stringify(pa11yReport, null, 4))
 
     }),
   });
