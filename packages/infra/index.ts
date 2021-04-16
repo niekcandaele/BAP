@@ -9,45 +9,44 @@ const config = require('./config.json') as ISiteConfig[]
 
 
 class MyStaticSiteStack extends cdk.Stack {
-    constructor(parent: cdk.App, name: string, props: IProps) {
+    constructor(parent: cdk.App, name: string, props: cdk.StackProps) {
         super(parent, name, props);
 
-
-        new StaticSite(this, `Static-${props.deployment.subDomain}`, {
-            domainName: this.node.tryGetContext('domain'),
-            siteSubDomain: props.deployment.subDomain,
-            config: props.deployment
-        });
+        for (const deployment of config) {
+            console.log(deployment);
+            buildAssets(deployment)
+            new StaticSite(this, `Static-${deployment.subDomain}`, {
+                domainName: this.node.tryGetContext('domain'),
+                siteSubDomain: deployment.subDomain,
+                config: deployment
+            });
+        }
 
     }
 }
 
-for (const deployment of config) {
-    const app = new cdk.App();
+const app = new cdk.App();
 
-    console.log(deployment);
-    buildAssets(deployment)
+new MyStaticSiteStack(app, 'MyStaticSite', {
+    env: {
+        account: '417820299922',
+        // Stack must be in us-east-1, because the ACM certificate for a
+        // global CloudFront distribution must be requested in us-east-1.
+        region: 'us-east-1',
+    },
+});
+app.synth();
 
-    new MyStaticSiteStack(app, 'MyStaticSite', {
-        env: {
-            account: '417820299922',
-            // Stack must be in us-east-1, because the ACM certificate for a
-            // global CloudFront distribution must be requested in us-east-1.
-            region: 'us-east-1',
-        },
-        deployment: deployment
-    });
-    app.synth();
-
-}
 
 
 async function buildAssets(config: ISiteConfig) {
+    // TODO: Should probably become a proper script
 
     console.log(`BUILDING SITE ${config.subDomain}`);
 
-    // TODO: Should probably become a proper script
-    execSync('cd ../gatsby && npm run build')
+    // Deleting .cache is important here!
+    execSync(`cd ../gatsby && rm -r .cache && GATSBY_CAMPAIGN=${config.subDomain} npm run build`)
+
     // We move the built folder to /tmp 
     // so we can create and deploy multiple builds
     execSync(`cd ../gatsby && mv public /tmp/gatsby-${config.subDomain}`)
@@ -64,6 +63,3 @@ interface IModules {
     thankYou: boolean
 }
 
-interface IProps extends cdk.StackProps {
-    deployment: ISiteConfig
-}
