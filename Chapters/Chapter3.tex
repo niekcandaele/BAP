@@ -1,51 +1,115 @@
-\chapter{Performance} % Main chapter title
+% Chapter Template
+
+\chapter{Theory} % Main chapter title
 
 \label{Chapter3} 
 
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
 
-\section{Approach}
+\section{Static site generators}
 
+Static site generators take your app and build it before serving to users. 
+This means users receive plain HTML files. This moves a large computational burden from run time to build time which results in significantly faster load times for users.
+Furthermore, this approach allows for more aggressive and efficient caching.
 
-Based on the information we gathered in the previous chapter, we will create several proof of concept apps with these technologies.
-We will also create a standardized performance benchmark using Cypress. Cypress can run the tests on multiple browsers.
+\subsection{Nextjs}
 
-
-The proof of concept apps must replicate the real behavior as close as possible. 
+Nextjs\footnote{https://nextjs.org/} is a React framework. Not explicitly a static site generator but has support for it. Nextjs has support for a ton of interesting features, 
 
 \begin{itemize}
-	\item Load images from the CMS
-	\item Perform API requests to a backend
-	\item ... ? // TODO: what else does it need to do? Dont go too far with the PoC apps tho
+	\item Image optimization
+	\item Hybrid static site generation and server side rendering
+	\item Internationalization
+	\item Typescript support
+\end{itemize}
+
+// TODO: Fill this out more once the PoC is created
+
+\subsection{Gatsby}
+
+Gatsby\footnote{https://www.gatsbyjs.com/} is a static site generator at heart. It is one of the most popular frameworks around
+
+\begin{itemize}
+	\item Static site generation leads to better performance
+	\item Image optimization
+	\item Large plugin ecosystem
 \end{itemize}
 
 
-The tests will be ran using Docker containers.
-// TODO: explain how it works :)
-// There's a bunch of moving parts (CMS with database + benchmark + each PoC app)
+
+\section{Cypress}
+
+Cypress\footnote{https://www.cypress.io/} is a tool made to run automated end-to-end tests in a browser. 
+
+We will use Cypress for it's simple API to control browsers programmatically. It will allow us to define the performance benchmarks as code and easily run that on the different PoC applications.
+
+\section{Strapi}
+
+Strapi\footnote{https://strapi.io/} is an open-source CMS. While Stampix uses a different CMS, we chose Strapi because it is easy to run locally. 
+Because we are running the CMS locally, it is much easier to create a configuration that we can reuse across different deployments. 
 
 
-To accurately gauge performance of each app, we will take into account several factors.
+\section{Docker}
 
-// TODO: Should formalize these and explain what each metric means?
+Docker\footnote{https://www.docker.com/} is a tool to run and manage containers. We will 'Dockerize' all of the components of our benchmarking pipeline: the PoC applications, Strapi and even Cypress. 
+By using containers for this, we can create a pipeline that is platform independent. You, the reader, can run the benchmark on your own computer and you will see similar results we got in this paper.
 
-\begin{itemize}
-	\item Web vitals  https://web.dev/vitals/
-	\item Build time (aka how long does `npm run build` take?)
-	\item Lighthouse scores https://web.dev/performance-scoring/
-	\item //TODO: Any more?
-\end{itemize}
 
-We should also try to run these tests locally vs in a deployed environment. Network latency (or other factors) may play a big role! 
+\section{Methodology}
 
-\section{Results}
+To make an educated decision on what framework provides the best performance, we will create a benchmarking pipeline. 
+We will create small, proof of concept applications in the above mentioned frameworks which try to replicate real world behavior as close as possible.
 
-// TODO: Tables with a bunch of numbers go in the appendix,
-// What visualizations can we create to put in here?
+Each PoC application must at least be able to load some assets from the CMS and perform an API request to the backend.
 
-// TODO:
-Which is fastest? Probably have to weigh different factors together. 
-I doubt one technology will be the clear winner here
 
-// TODO:
-We should also explain why metrics differ per technology.
-For example, I expect static site generators to have a better Largest Contentful Paint than a app that loads CMS assets during runtime
+\section{Metrics}
+
+Now that we have defined how we will create and run this performance benchmark, we can define some key metrics.
+
+\subsection{Largest contentful paint}
+
+\begin{quote}
+	Largest Contentful Paint (LCP) is an important, user-centric metric for measuring perceived load speed because it marks the point in the page load timeline when the page's main content has likely loaded—a fast LCP helps reassure the user that the page is useful.
+	\hfill \cite{webvitalswebsite}
+\end{quote}
+
+LCP is an important metric for us. In the original application, this would happen after the request to the CMS. 
+That means LCP will be rather late for the average use. 
+By using static site generators like we will we can make sure all of the content we want to show the user is served from a very fast CDN.
+
+\subsection{First input delay}
+
+https://web.dev/fid/
+
+\subsection{Cumulative layout shift}
+
+https://web.dev/cls/
+
+
+\subsection{Bundle size}
+
+When a user visits the site, one of the main reasons they have to wait for a site to load is network connectivity. 
+If a user has a faster network connection, they can download the static files of the website faster.
+This is a part of the system where Stampix has very little control, it is impossible to give the users a better network connection. 
+However, what we can do, is make sure that the user has to download the smallest amount of data as possible. 
+To achieve this, we can use a technique called minification to take our front end code and make it smaller.
+
+Code written by developers might look something like:
+
+\begin{verbatim}
+    function doSomething(parameterName) {
+        const aVariableWithALongName = 'foo'
+        return aVariableWithALongName + parameterName + 'bar'
+    }
+\end{verbatim}
+
+After minification, the code will look something like:
+
+\begin{verbatim}
+    function a(o){return"foo"+o+"bar"}
+\end{verbatim}
+
+Over the entire codebase, shortening the code like this will result in a significantly smaller download size for the user.
