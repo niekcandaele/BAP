@@ -1,3 +1,6 @@
+const { lighthouse, pa11y, prepareAudit } = require("cypress-audit");
+const fs = require('fs').promises
+
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -16,6 +19,22 @@
  * @type {Cypress.PluginConfig}
  */
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+  on("before:browser:launch", (browser = {}, launchOptions) => {
+    prepareAudit(launchOptions);
+  });
+
+  on("task", {
+    lighthouse: lighthouse(async (lighthouseReport) => {
+      console.log(`LIGHTHOUSE REPORT FINISHED, SAVING`);
+      console.log(__dirname)
+      const sanitizedName = lighthouseReport.lhr.finalUrl.split('/').join('') // forward slashes confusing path 
+      await fs.writeFile(`./reports/${sanitizedName}-lighthouse.json`, JSON.stringify(lighthouseReport, null, 4))
+    }),
+    pa11y: pa11y(async (pa11yReport) => {
+      console.log(`PA11REPORT REPORT FINISHED, SAVING`);
+      const sanitizedName = pa11yReport.pageUrl.split('/').join('') // forward slashes confusing path 
+      await fs.writeFile(`./reports/${sanitizedName}-pa11y.json`, JSON.stringify(pa11yReport, null, 4))
+
+    }),
+  });
+};

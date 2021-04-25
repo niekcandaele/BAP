@@ -1,0 +1,66 @@
+{
+    "documentTitle": "Nextjs PoC",
+    "pageUrl": "http://127.0.0.1:3002/",
+    "issues": [
+        {
+            "code": "html-has-lang",
+            "type": "error",
+            "typeCode": 1,
+            "message": "<html> element must have a lang attribute (https://dequeuniversity.com/rules/axe/3.5/html-has-lang?application=axeAPI)",
+            "context": "<html><head> <script type=\"text/javas...</html>",
+            "selector": "html",
+            "runner": "axe",
+            "runnerExtras": {
+                "description": "Ensures every HTML document has a lang attribute",
+                "impact": "serious",
+                "help": "<html> element must have a lang attribute",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/html-has-lang?application=axeAPI"
+            }
+        },
+        {
+            "code": "landmark-one-main",
+            "type": "error",
+            "typeCode": 1,
+            "message": "Document must have one main landmark (https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI)",
+            "context": "<html><head> <script type=\"text/javas...</html>",
+            "selector": "html",
+            "runner": "axe",
+            "runnerExtras": {
+                "description": "Ensures the document has a main landmark",
+                "impact": "moderate",
+                "help": "Document must have one main landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI"
+            }
+        },
+        {
+            "code": "page-has-heading-one",
+            "type": "error",
+            "typeCode": 1,
+            "message": "Page must contain a level-one heading (https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI)",
+            "context": "<html><head> <script type=\"text/javas...</html>",
+            "selector": "html",
+            "runner": "axe",
+            "runnerExtras": {
+                "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+                "impact": "moderate",
+                "help": "Page must contain a level-one heading",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI"
+            }
+        },
+        {
+            "code": "region",
+            "type": "error",
+            "typeCode": 1,
+            "message": "All page content must be contained by landmarks (https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI)",
+            "context": "<div id=\"__next\"><div class=\"container\"><p>test<...</div>",
+            "selector": "#__next",
+            "runner": "axe",
+            "runnerExtras": {
+                "description": "Ensures all page content is contained by landmarks",
+                "impact": "moderate",
+                "help": "All page content must be contained by landmarks",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI"
+            }
+        }
+    ]
+}

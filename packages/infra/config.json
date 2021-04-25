@@ -1,0 +1,14 @@
+[
+    {
+        "subDomain": "company1",
+        "modules": {
+            "thankYou": false
+        }
+    },
+    {
+        "subDomain": "company2",
+        "modules": {
+            "thankYou": true
+        }
+    }
+]

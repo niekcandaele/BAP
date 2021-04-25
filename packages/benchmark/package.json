@@ -20,6 +20,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "docker:build": "docker build . -t niekcandaele/bap-benchmark",
     "start": "docker run niekcandaele/bap-benchmark"
   },
@@ -27,6 +28,7 @@
     "url": "https://github.com/niekcandaele/BAP/issues"
   },
   "dependencies": {
-    "cypress": "^6.6.0"
+    "cypress": "^6.6.0",
+    "cypress-audit": "^0.3.0"
   }
 }
