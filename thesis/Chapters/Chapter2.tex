@@ -26,3 +26,6 @@ However, it is an important point and the solution this paper proposes must supp
 To support different assets for different clients, the current implementation loads the assets during runtime. 
 If loading assets is moved from runtime to build time with a static site generator, the methodology for deploying the application must support this. 
 In effect, this means that requests to the CMS will happen during the build scripts.
+
+The main disadvantage of making this distinction during runtime is that users have to wait for the logic and requests to have ran.
+By selecting the required assets during build time, users are instantly served the right assets which boosts performance.
