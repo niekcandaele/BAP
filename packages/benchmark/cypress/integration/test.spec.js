@@ -3,6 +3,7 @@ import 'cypress-audit/commands';
 const apps = [
     'http://127.0.0.1:3001', // Gatsby,
     'http://127.0.0.1:3002', // Nextjs
+    'http://127.0.0.1:3003', // React traditional
 ]
 
 describe('Reports', () => {
