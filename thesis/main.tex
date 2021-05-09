@@ -43,9 +43,10 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{mathpazo} % Use the Palatino font by default
 
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
+\usepackage[backend=biber, style=ieee,natbib=true]{biblatex}
 \addbibresource{example.bib} % The filename of the bibliography
+
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
@@ -98,15 +99,15 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{titlepage}
 	\begin{center}
-																
+																																																				
 		\vspace*{.06\textheight}
 		{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
 		\textsc{\Large Thesis}\\[0.5cm] % Thesis type
-																
+																																																				
 		\HRule \\[0.4cm] % Horizontal line
 		{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
 		\HRule \\[1.5cm] % Horizontal line
-																 
+																																																				 
 		\begin{minipage}[t]{0.4\textwidth}
 			\begin{flushleft} \large
 				\emph{Author:}\\
@@ -119,14 +120,14 @@ headsepline, % Uncomment to get a line under the header
 				\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
 			\end{flushright}
 		\end{minipage}\\[3cm]
-																 
-																
-																 
+																																																				 
+																																																				
+																																																				 
 		\vfill
-																
+																																																				
 		{\large \today}\\[4cm] % Date
 		%\includegraphics{Logo} % University/department logo - uncomment to place it
-																 
+																																																				 
 		\vfill
 	\end{center}
 \end{titlepage}
@@ -175,7 +176,7 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
-								
+																										
 	\textbf{AWS} & \textbf{A}mazon \textbf{W}eb \textbf{S}ervices\\
 	\textbf{CMS} & \textbf{C}ontent \textbf{M}anagement \textbf{S}ystem\\
 	\textbf{IaC} & \textbf{I}nfrastructure \textbf{a}s \textbf{C}ode\\
@@ -184,7 +185,9 @@ headsepline, % Uncomment to get a line under the header
 	\textbf{CLS} & \textbf{C}umulative \textbf{L}ayout \textbf{S}hift\\
 	\textbf{CDN} & \textbf{C}ontent \textbf{D}istribution \textbf{N}etwork\\
 	\textbf{CDK} & \textbf{C}loud \textbf{D}evelopment \textbf{K}it\\
-								
+	\textbf{CI} & \textbf{C}ontinuous \textbf{I}ntegration\\
+	\textbf{CD} & \textbf{C}ontinuous \textbf{D}eployment\\
+																										
 \end{abbreviations}
 
 
