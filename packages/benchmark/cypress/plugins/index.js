@@ -29,12 +29,6 @@ module.exports = (on, config) => {
       console.log(__dirname)
       const sanitizedName = lighthouseReport.lhr.finalUrl.split('/').join('') // forward slashes confusing path 
       await fs.writeFile(`./reports/${sanitizedName}-lighthouse.json`, JSON.stringify(lighthouseReport, null, 4))
-    }),
-    pa11y: pa11y(async (pa11yReport) => {
-      console.log(`PA11REPORT REPORT FINISHED, SAVING`);
-      const sanitizedName = pa11yReport.pageUrl.split('/').join('') // forward slashes confusing path 
-      await fs.writeFile(`./reports/${sanitizedName}-pa11y.json`, JSON.stringify(pa11yReport, null, 4))
-
-    }),
+    })
   });
 };

@@ -1,0 +1,1752 @@
+[
+    {
+        "gatsby": {
+            "firstContentfulPaint": 726.0497,
+            "largestContentfulPaint": 726.0497,
+            "firstMeaningfulPaint": 726.0497,
+            "speedIndex": 726.0497,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 726.0497
+        },
+        "next": {
+            "firstContentfulPaint": 653.0422,
+            "largestContentfulPaint": 738.0422,
+            "firstMeaningfulPaint": 653.0422,
+            "speedIndex": 653.0422,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 35,
+            "maxPotentialFid": 85,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 738.0422
+        },
+        "react": {
+            "firstContentfulPaint": 1212.7143500000002,
+            "largestContentfulPaint": 1451.6461,
+            "firstMeaningfulPaint": 1212.7143500000002,
+            "speedIndex": 1212.7143500000002,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.57145000000003,
+            "maxPotentialFid": 116.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1212.7143500000002
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 684.11065,
+            "largestContentfulPaint": 684.11065,
+            "firstMeaningfulPaint": 684.11065,
+            "speedIndex": 684.11065,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 46,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 684.11065
+        },
+        "next": {
+            "firstContentfulPaint": 654.20785,
+            "largestContentfulPaint": 700.20785,
+            "firstMeaningfulPaint": 654.20785,
+            "speedIndex": 654.20785,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 46,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 654.20785
+        },
+        "react": {
+            "firstContentfulPaint": 1258.6685,
+            "largestContentfulPaint": 1468.4214,
+            "firstMeaningfulPaint": 1258.6685,
+            "speedIndex": 1258.6685,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 60.8895,
+            "maxPotentialFid": 130.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1258.6685
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 743.0881,
+            "largestContentfulPaint": 743.0881,
+            "firstMeaningfulPaint": 743.0881,
+            "speedIndex": 743.0881,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 41,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 743.0881
+        },
+        "next": {
+            "firstContentfulPaint": 744.56135,
+            "largestContentfulPaint": 744.56135,
+            "firstMeaningfulPaint": 744.56135,
+            "speedIndex": 744.56135,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 744.56135
+        },
+        "react": {
+            "firstContentfulPaint": 1217.55975,
+            "largestContentfulPaint": 1458.9054,
+            "firstMeaningfulPaint": 1217.55975,
+            "speedIndex": 1217.55975,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.85325,
+            "maxPotentialFid": 115,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1217.55975
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 735.2019,
+            "largestContentfulPaint": 735.2019,
+            "firstMeaningfulPaint": 735.2019,
+            "speedIndex": 735.2019,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 42,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.2019
+        },
+        "next": {
+            "firstContentfulPaint": 650.1322,
+            "largestContentfulPaint": 650.1322,
+            "firstMeaningfulPaint": 650.1322,
+            "speedIndex": 650.1322,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 42,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 650.1322
+        },
+        "react": {
+            "firstContentfulPaint": 1242.6488749999999,
+            "largestContentfulPaint": 1454.920975,
+            "firstMeaningfulPaint": 1242.6488749999999,
+            "speedIndex": 1242.6488749999999,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.548574999999914,
+            "maxPotentialFid": 129.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1242.6488749999999
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 685.1593,
+            "largestContentfulPaint": 685.1593,
+            "firstMeaningfulPaint": 685.1593,
+            "speedIndex": 685.1593,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 47,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 685.1593
+        },
+        "next": {
+            "firstContentfulPaint": 732.11885,
+            "largestContentfulPaint": 732.11885,
+            "firstMeaningfulPaint": 732.11885,
+            "speedIndex": 732.11885,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 732.11885
+        },
+        "react": {
+            "firstContentfulPaint": 1230.4319,
+            "largestContentfulPaint": 1452.8585,
+            "firstMeaningfulPaint": 1230.4319,
+            "speedIndex": 1230.4319,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.477300000000014,
+            "maxPotentialFid": 124.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1230.4319
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 725.9858,
+            "largestContentfulPaint": 725.9858,
+            "firstMeaningfulPaint": 725.9858,
+            "speedIndex": 725.9858,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 46,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 725.9858
+        },
+        "next": {
+            "firstContentfulPaint": 755.5466,
+            "largestContentfulPaint": 755.5466,
+            "firstMeaningfulPaint": 755.5466,
+            "speedIndex": 755.5466,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 755.5466
+        },
+        "react": {
+            "firstContentfulPaint": 1221.9233999999997,
+            "largestContentfulPaint": 1460.8858499999997,
+            "firstMeaningfulPaint": 1221.9233999999997,
+            "speedIndex": 1221.9233999999997,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 58.27509999999995,
+            "maxPotentialFid": 116,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1221.9233999999997
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 713.08865,
+            "largestContentfulPaint": 713.08865,
+            "firstMeaningfulPaint": 713.08865,
+            "speedIndex": 713.08865,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 45,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 713.08865
+        },
+        "next": {
+            "firstContentfulPaint": 650.3428,
+            "largestContentfulPaint": 735.3428,
+            "firstMeaningfulPaint": 650.3428,
+            "speedIndex": 650.3428,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 35,
+            "maxPotentialFid": 85,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.3428
+        },
+        "react": {
+            "firstContentfulPaint": 1224.6569,
+            "largestContentfulPaint": 1451.617,
+            "firstMeaningfulPaint": 1224.6569,
+            "speedIndex": 1224.6569,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.55230000000006,
+            "maxPotentialFid": 122,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1224.6569
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 684.94715,
+            "largestContentfulPaint": 684.94715,
+            "firstMeaningfulPaint": 684.94715,
+            "speedIndex": 684.94715,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 43,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 684.94715
+        },
+        "next": {
+            "firstContentfulPaint": 653.24725,
+            "largestContentfulPaint": 736.24725,
+            "firstMeaningfulPaint": 653.24725,
+            "speedIndex": 653.24725,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 32,
+            "maxPotentialFid": 83,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 734.24725
+        },
+        "react": {
+            "firstContentfulPaint": 1221.3437750000003,
+            "largestContentfulPaint": 1461.9496250000002,
+            "firstMeaningfulPaint": 1221.3437750000003,
+            "speedIndex": 1221.3437750000003,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.44777499999998,
+            "maxPotentialFid": 116.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1221.3437750000003
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 735.15505,
+            "largestContentfulPaint": 735.15505,
+            "firstMeaningfulPaint": 735.15505,
+            "speedIndex": 735.15505,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 43,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.15505
+        },
+        "next": {
+            "firstContentfulPaint": 774.107,
+            "largestContentfulPaint": 774.107,
+            "firstMeaningfulPaint": 774.107,
+            "speedIndex": 774.107,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 774.107
+        },
+        "react": {
+            "firstContentfulPaint": 1232.465375,
+            "largestContentfulPaint": 1454.948075,
+            "firstMeaningfulPaint": 1232.465375,
+            "speedIndex": 1232.465375,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.152275000000145,
+            "maxPotentialFid": 124.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1232.465375
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 681.03335,
+            "largestContentfulPaint": 681.03335,
+            "firstMeaningfulPaint": 681.03335,
+            "speedIndex": 681.03335,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 47,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 681.03335
+        },
+        "next": {
+            "firstContentfulPaint": 736.979,
+            "largestContentfulPaint": 736.979,
+            "firstMeaningfulPaint": 736.979,
+            "speedIndex": 736.979,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 736.979
+        },
+        "react": {
+            "firstContentfulPaint": 1214.5949500000002,
+            "largestContentfulPaint": 1456.787,
+            "firstMeaningfulPaint": 1214.5949500000002,
+            "speedIndex": 1214.5949500000002,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.53165000000001,
+            "maxPotentialFid": 115,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1214.5949500000002
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 681.9898,
+            "largestContentfulPaint": 681.9898,
+            "firstMeaningfulPaint": 681.9898,
+            "speedIndex": 681.9898,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 48,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 681.9898
+        },
+        "next": {
+            "firstContentfulPaint": 695.1621,
+            "largestContentfulPaint": 695.1621,
+            "firstMeaningfulPaint": 695.1621,
+            "speedIndex": 695.1621,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 44,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 695.1621
+        },
+        "react": {
+            "firstContentfulPaint": 1231.2259499999998,
+            "largestContentfulPaint": 1454.3039499999998,
+            "firstMeaningfulPaint": 1231.2259499999998,
+            "speedIndex": 1231.2259499999998,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.39934999999991,
+            "maxPotentialFid": 124,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1231.2259499999998
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 692.4737,
+            "largestContentfulPaint": 692.4737,
+            "firstMeaningfulPaint": 692.4737,
+            "speedIndex": 692.4737,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 43,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 692.4737
+        },
+        "next": {
+            "firstContentfulPaint": 741.84375,
+            "largestContentfulPaint": 741.84375,
+            "firstMeaningfulPaint": 741.84375,
+            "speedIndex": 741.84375,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 741.84375
+        },
+        "react": {
+            "firstContentfulPaint": 1215.34825,
+            "largestContentfulPaint": 1452.5096999999998,
+            "firstMeaningfulPaint": 1215.34825,
+            "speedIndex": 1215.34825,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.782749999999965,
+            "maxPotentialFid": 117,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1215.34825
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 686.05125,
+            "largestContentfulPaint": 1127.1025,
+            "firstMeaningfulPaint": 686.05125,
+            "speedIndex": 686.05125,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 44,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 686.05125
+        },
+        "next": {
+            "firstContentfulPaint": 650.32315,
+            "largestContentfulPaint": 650.32315,
+            "firstMeaningfulPaint": 650.32315,
+            "speedIndex": 650.32315,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 44,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 650.32315
+        },
+        "react": {
+            "firstContentfulPaint": 1222.2057499999999,
+            "largestContentfulPaint": 1459.1341999999997,
+            "firstMeaningfulPaint": 1222.2057499999999,
+            "speedIndex": 1222.2057499999999,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.73524999999995,
+            "maxPotentialFid": 118,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1222.2057499999999
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 737.14725,
+            "largestContentfulPaint": 737.14725,
+            "firstMeaningfulPaint": 737.14725,
+            "speedIndex": 737.14725,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 737.14725
+        },
+        "next": {
+            "firstContentfulPaint": 735.371,
+            "largestContentfulPaint": 735.371,
+            "firstMeaningfulPaint": 735.371,
+            "speedIndex": 735.371,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.371
+        },
+        "react": {
+            "firstContentfulPaint": 1223.794975,
+            "largestContentfulPaint": 1452.988875,
+            "firstMeaningfulPaint": 1223.794975,
+            "speedIndex": 1223.794975,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.58347499999991,
+            "maxPotentialFid": 121.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1223.794975
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 749.12285,
+            "largestContentfulPaint": 749.12285,
+            "firstMeaningfulPaint": 749.12285,
+            "speedIndex": 749.12285,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 3,
+            "maxPotentialFid": 56,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 749.12285
+        },
+        "next": {
+            "firstContentfulPaint": 743.18795,
+            "largestContentfulPaint": 743.18795,
+            "firstMeaningfulPaint": 743.18795,
+            "speedIndex": 743.18795,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 743.18795
+        },
+        "react": {
+            "firstContentfulPaint": 1228.1665500000001,
+            "largestContentfulPaint": 1458.1286000000002,
+            "firstMeaningfulPaint": 1228.1665500000001,
+            "speedIndex": 1228.1665500000001,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.38885000000005,
+            "maxPotentialFid": 121,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1228.1665500000001
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 731.00965,
+            "largestContentfulPaint": 731.00965,
+            "firstMeaningfulPaint": 731.00965,
+            "speedIndex": 731.00965,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 731.00965
+        },
+        "next": {
+            "firstContentfulPaint": 739.47125,
+            "largestContentfulPaint": 739.47125,
+            "firstMeaningfulPaint": 739.47125,
+            "speedIndex": 739.47125,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 739.47125
+        },
+        "react": {
+            "firstContentfulPaint": 1258.8495000000003,
+            "largestContentfulPaint": 1604.722275,
+            "firstMeaningfulPaint": 1258.8495000000003,
+            "speedIndex": 1258.8495000000003,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.60119999999995,
+            "maxPotentialFid": 138.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1258.8495000000003
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 728.43915,
+            "largestContentfulPaint": 728.43915,
+            "firstMeaningfulPaint": 728.43915,
+            "speedIndex": 728.43915,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 728.43915
+        },
+        "next": {
+            "firstContentfulPaint": 652.3391,
+            "largestContentfulPaint": 736.3391,
+            "firstMeaningfulPaint": 652.3391,
+            "speedIndex": 652.3391,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 34,
+            "maxPotentialFid": 84,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 736.3391
+        },
+        "react": {
+            "firstContentfulPaint": 1216.16635,
+            "largestContentfulPaint": 1459.7431,
+            "firstMeaningfulPaint": 1216.16635,
+            "speedIndex": 1216.16635,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 58.055450000000064,
+            "maxPotentialFid": 114,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1216.16635
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 733.94615,
+            "largestContentfulPaint": 733.94615,
+            "firstMeaningfulPaint": 733.94615,
+            "speedIndex": 733.94615,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 733.94615
+        },
+        "next": {
+            "firstContentfulPaint": 770.28855,
+            "largestContentfulPaint": 770.28855,
+            "firstMeaningfulPaint": 770.28855,
+            "speedIndex": 770.28855,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 770.28855
+        },
+        "react": {
+            "firstContentfulPaint": 1253.7821999999996,
+            "largestContentfulPaint": 1452.4299499999997,
+            "firstMeaningfulPaint": 1253.7821999999996,
+            "speedIndex": 1253.7821999999996,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.91809999999998,
+            "maxPotentialFid": 136,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1253.7821999999996
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 680.9444,
+            "largestContentfulPaint": 680.9444,
+            "firstMeaningfulPaint": 680.9444,
+            "speedIndex": 680.9444,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 42,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 680.9444
+        },
+        "next": {
+            "firstContentfulPaint": 731.16225,
+            "largestContentfulPaint": 731.16225,
+            "firstMeaningfulPaint": 731.16225,
+            "speedIndex": 731.16225,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 731.16225
+        },
+        "react": {
+            "firstContentfulPaint": 1218.9539,
+            "largestContentfulPaint": 1456.31345,
+            "firstMeaningfulPaint": 1218.9539,
+            "speedIndex": 1218.9539,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.63779999999997,
+            "maxPotentialFid": 117,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1218.9539
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 685.1821,
+            "largestContentfulPaint": 685.1821,
+            "firstMeaningfulPaint": 685.1821,
+            "speedIndex": 685.1821,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 48,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 685.1821
+        },
+        "next": {
+            "firstContentfulPaint": 674.21575,
+            "largestContentfulPaint": 767.21575,
+            "firstMeaningfulPaint": 674.21575,
+            "speedIndex": 674.21575,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 43,
+            "maxPotentialFid": 93,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 767.21575
+        },
+        "react": {
+            "firstContentfulPaint": 1224.16305,
+            "largestContentfulPaint": 1454.9766,
+            "firstMeaningfulPaint": 1224.16305,
+            "speedIndex": 1224.16305,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.05435,
+            "maxPotentialFid": 120,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1224.16305
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 726.9608,
+            "largestContentfulPaint": 726.9608,
+            "firstMeaningfulPaint": 726.9608,
+            "speedIndex": 726.9608,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 726.9608
+        },
+        "next": {
+            "firstContentfulPaint": 732.0414,
+            "largestContentfulPaint": 732.0414,
+            "firstMeaningfulPaint": 732.0414,
+            "speedIndex": 732.0414,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 732.0414
+        },
+        "react": {
+            "firstContentfulPaint": 1226.48745,
+            "largestContentfulPaint": 1451.7892000000002,
+            "firstMeaningfulPaint": 1226.48745,
+            "speedIndex": 1226.48745,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.82915000000003,
+            "maxPotentialFid": 123,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1226.48745
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 695.30705,
+            "largestContentfulPaint": 695.30705,
+            "firstMeaningfulPaint": 695.30705,
+            "speedIndex": 695.30705,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 1.5,
+            "maxPotentialFid": 53,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 695.30705
+        },
+        "next": {
+            "firstContentfulPaint": 745.14655,
+            "largestContentfulPaint": 745.14655,
+            "firstMeaningfulPaint": 745.14655,
+            "speedIndex": 745.14655,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 745.14655
+        },
+        "react": {
+            "firstContentfulPaint": 1218.05595,
+            "largestContentfulPaint": 1453.9191999999998,
+            "firstMeaningfulPaint": 1218.05595,
+            "speedIndex": 1218.05595,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.01864999999998,
+            "maxPotentialFid": 118,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1218.05595
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 740.9632,
+            "largestContentfulPaint": 740.9632,
+            "firstMeaningfulPaint": 740.9632,
+            "speedIndex": 740.9632,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 740.9632
+        },
+        "next": {
+            "firstContentfulPaint": 736.1158,
+            "largestContentfulPaint": 736.1158,
+            "firstMeaningfulPaint": 736.1158,
+            "speedIndex": 736.1158,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 736.1158
+        },
+        "react": {
+            "firstContentfulPaint": 1266.0772000000002,
+            "largestContentfulPaint": 1612.863625,
+            "firstMeaningfulPaint": 1266.0772000000002,
+            "speedIndex": 1266.0772000000002,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.69150000000002,
+            "maxPotentialFid": 138.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1266.0772000000002
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 756.9119,
+            "largestContentfulPaint": 1201.8238,
+            "firstMeaningfulPaint": 756.9119,
+            "speedIndex": 756.9119,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0.5,
+            "maxPotentialFid": 51,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 756.9119
+        },
+        "next": {
+            "firstContentfulPaint": 652.14975,
+            "largestContentfulPaint": 694.14975,
+            "firstMeaningfulPaint": 652.14975,
+            "speedIndex": 652.14975,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 42,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 652.14975
+        },
+        "react": {
+            "firstContentfulPaint": 1238.2227,
+            "largestContentfulPaint": 1613.0587999999998,
+            "firstMeaningfulPaint": 1238.2227,
+            "speedIndex": 1238.2227,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.74090000000001,
+            "maxPotentialFid": 125.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1238.2227
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 731.3247,
+            "largestContentfulPaint": 731.3247,
+            "firstMeaningfulPaint": 731.3247,
+            "speedIndex": 731.3247,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 731.3247
+        },
+        "next": {
+            "firstContentfulPaint": 741.36475,
+            "largestContentfulPaint": 741.36475,
+            "firstMeaningfulPaint": 741.36475,
+            "speedIndex": 741.36475,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 741.36475
+        },
+        "react": {
+            "firstContentfulPaint": 1216.9654,
+            "largestContentfulPaint": 1456.17075,
+            "firstMeaningfulPaint": 1216.9654,
+            "speedIndex": 1216.9654,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.32089999999994,
+            "maxPotentialFid": 116,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1216.9654
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 746.2044,
+            "largestContentfulPaint": 746.2044,
+            "firstMeaningfulPaint": 746.2044,
+            "speedIndex": 746.2044,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 746.2044
+        },
+        "next": {
+            "firstContentfulPaint": 651.95075,
+            "largestContentfulPaint": 745.95075,
+            "firstMeaningfulPaint": 651.95075,
+            "speedIndex": 651.95075,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 43,
+            "maxPotentialFid": 94,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 743.95075
+        },
+        "react": {
+            "firstContentfulPaint": 1231.0287750000002,
+            "largestContentfulPaint": 1611.3956750000002,
+            "firstMeaningfulPaint": 1231.0287750000002,
+            "speedIndex": 1231.0287750000002,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.33827499999995,
+            "maxPotentialFid": 122.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1231.0287750000002
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 735.9988,
+            "largestContentfulPaint": 735.9988,
+            "firstMeaningfulPaint": 735.9988,
+            "speedIndex": 735.9988,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.9988
+        },
+        "next": {
+            "firstContentfulPaint": 648.0045,
+            "largestContentfulPaint": 729.0045,
+            "firstMeaningfulPaint": 648.0045,
+            "speedIndex": 648.0045,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 15.5,
+            "maxPotentialFid": 81,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 692.4893365783691
+        },
+        "react": {
+            "firstContentfulPaint": 1224.7247499999999,
+            "largestContentfulPaint": 1452.5299999999997,
+            "firstMeaningfulPaint": 1224.7247499999999,
+            "speedIndex": 1224.7247499999999,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.90824999999995,
+            "maxPotentialFid": 121.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1224.7247499999999
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 681.01765,
+            "largestContentfulPaint": 681.01765,
+            "firstMeaningfulPaint": 681.01765,
+            "speedIndex": 681.01765,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 3,
+            "maxPotentialFid": 56,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 681.01765
+        },
+        "next": {
+            "firstContentfulPaint": 748.06875,
+            "largestContentfulPaint": 748.06875,
+            "firstMeaningfulPaint": 748.06875,
+            "speedIndex": 748.06875,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 748.06875
+        },
+        "react": {
+            "firstContentfulPaint": 1259.02455,
+            "largestContentfulPaint": 1463.6032,
+            "firstMeaningfulPaint": 1259.02455,
+            "speedIndex": 1259.02455,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 58.67484999999999,
+            "maxPotentialFid": 133.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1259.02455
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 733.3297,
+            "largestContentfulPaint": 733.3297,
+            "firstMeaningfulPaint": 733.3297,
+            "speedIndex": 733.3297,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 733.3297
+        },
+        "next": {
+            "firstContentfulPaint": 736.3986,
+            "largestContentfulPaint": 736.3986,
+            "firstMeaningfulPaint": 736.3986,
+            "speedIndex": 736.3986,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 736.3986
+        },
+        "react": {
+            "firstContentfulPaint": 1234.2977999999998,
+            "largestContentfulPaint": 1454.7208999999998,
+            "firstMeaningfulPaint": 1234.2977999999998,
+            "speedIndex": 1234.2977999999998,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.43259999999998,
+            "maxPotentialFid": 125.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1234.2977999999998
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 686.1562,
+            "largestContentfulPaint": 686.1562,
+            "firstMeaningfulPaint": 686.1562,
+            "speedIndex": 686.1562,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 46,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 686.1562
+        },
+        "next": {
+            "firstContentfulPaint": 646.30425,
+            "largestContentfulPaint": 697.30425,
+            "firstMeaningfulPaint": 646.30425,
+            "speedIndex": 646.30425,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0.5,
+            "maxPotentialFid": 51,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 646.30425
+        },
+        "react": {
+            "firstContentfulPaint": 1232.4035,
+            "largestContentfulPaint": 1460.4523,
+            "firstMeaningfulPaint": 1232.4035,
+            "speedIndex": 1232.4035,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 58.1345,
+            "maxPotentialFid": 122,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1232.4035
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 733.14765,
+            "largestContentfulPaint": 733.14765,
+            "firstMeaningfulPaint": 733.14765,
+            "speedIndex": 733.14765,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 733.14765
+        },
+        "next": {
+            "firstContentfulPaint": 745.09075,
+            "largestContentfulPaint": 745.09075,
+            "firstMeaningfulPaint": 745.09075,
+            "speedIndex": 745.09075,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 745.09075
+        },
+        "react": {
+            "firstContentfulPaint": 1226.6942,
+            "largestContentfulPaint": 1450.7585,
+            "firstMeaningfulPaint": 1226.6942,
+            "speedIndex": 1226.6942,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.23140000000001,
+            "maxPotentialFid": 123.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1226.6942
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 730.9244,
+            "largestContentfulPaint": 730.9244,
+            "firstMeaningfulPaint": 730.9244,
+            "speedIndex": 730.9244,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 730.9244
+        },
+        "next": {
+            "firstContentfulPaint": 704.11495,
+            "largestContentfulPaint": 704.11495,
+            "firstMeaningfulPaint": 704.11495,
+            "speedIndex": 704.11495,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 50,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 704.11495
+        },
+        "react": {
+            "firstContentfulPaint": 1229.88215,
+            "largestContentfulPaint": 1458.7813999999998,
+            "firstMeaningfulPaint": 1229.88215,
+            "speedIndex": 1229.88215,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.29404999999997,
+            "maxPotentialFid": 121.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1229.88215
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 726.03175,
+            "largestContentfulPaint": 726.03175,
+            "firstMeaningfulPaint": 726.03175,
+            "speedIndex": 726.03175,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 726.03175
+        },
+        "next": {
+            "firstContentfulPaint": 737.06205,
+            "largestContentfulPaint": 737.06205,
+            "firstMeaningfulPaint": 737.06205,
+            "speedIndex": 737.06205,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 737.06205
+        },
+        "react": {
+            "firstContentfulPaint": 1236.210325,
+            "largestContentfulPaint": 1457.877225,
+            "firstMeaningfulPaint": 1236.210325,
+            "speedIndex": 1236.210325,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.71502499999997,
+            "maxPotentialFid": 124.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1236.210325
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 741.7033,
+            "largestContentfulPaint": 741.7033,
+            "firstMeaningfulPaint": 741.7033,
+            "speedIndex": 741.7033,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 741.7033
+        },
+        "next": {
+            "firstContentfulPaint": 653.0626,
+            "largestContentfulPaint": 653.0626,
+            "firstMeaningfulPaint": 653.0626,
+            "speedIndex": 653.0626,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 44,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 653.0626
+        },
+        "react": {
+            "firstContentfulPaint": 1211.89005,
+            "largestContentfulPaint": 1451.8238,
+            "firstMeaningfulPaint": 1211.89005,
+            "speedIndex": 1211.89005,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.96334999999999,
+            "maxPotentialFid": 115.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1211.89005
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 740.2079,
+            "largestContentfulPaint": 740.2079,
+            "firstMeaningfulPaint": 740.2079,
+            "speedIndex": 740.2079,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 740.2079
+        },
+        "next": {
+            "firstContentfulPaint": 741.31375,
+            "largestContentfulPaint": 741.31375,
+            "firstMeaningfulPaint": 741.31375,
+            "speedIndex": 741.31375,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 741.31375
+        },
+        "react": {
+            "firstContentfulPaint": 1234.5050500000002,
+            "largestContentfulPaint": 1452.9589,
+            "firstMeaningfulPaint": 1234.5050500000002,
+            "speedIndex": 1234.5050500000002,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.16835000000003,
+            "maxPotentialFid": 126.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1234.5050500000002
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 687.03105,
+            "largestContentfulPaint": 687.03105,
+            "firstMeaningfulPaint": 687.03105,
+            "speedIndex": 687.03105,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 1,
+            "maxPotentialFid": 52,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 687.03105
+        },
+        "next": {
+            "firstContentfulPaint": 742.1892,
+            "largestContentfulPaint": 742.1892,
+            "firstMeaningfulPaint": 742.1892,
+            "speedIndex": 742.1892,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 742.1892
+        },
+        "react": {
+            "firstContentfulPaint": 1217.7525,
+            "largestContentfulPaint": 1453.2844,
+            "firstMeaningfulPaint": 1217.7525,
+            "speedIndex": 1217.7525,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.91629999999998,
+            "maxPotentialFid": 118,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1217.7525
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 698.0307,
+            "largestContentfulPaint": 698.0307,
+            "firstMeaningfulPaint": 698.0307,
+            "speedIndex": 698.0307,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 48,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 698.0307
+        },
+        "next": {
+            "firstContentfulPaint": 649.16705,
+            "largestContentfulPaint": 741.16705,
+            "firstMeaningfulPaint": 649.16705,
+            "speedIndex": 649.16705,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 42,
+            "maxPotentialFid": 92,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 741.16705
+        },
+        "react": {
+            "firstContentfulPaint": 1231.2948999999999,
+            "largestContentfulPaint": 1457.1343,
+            "firstMeaningfulPaint": 1231.2948999999999,
+            "speedIndex": 1231.2948999999999,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.098299999999995,
+            "maxPotentialFid": 122.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1231.2948999999999
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 690.22235,
+            "largestContentfulPaint": 690.22235,
+            "firstMeaningfulPaint": 690.22235,
+            "speedIndex": 690.22235,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 2,
+            "maxPotentialFid": 54,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 690.22235
+        },
+        "next": {
+            "firstContentfulPaint": 738.2224,
+            "largestContentfulPaint": 738.2224,
+            "firstMeaningfulPaint": 738.2224,
+            "speedIndex": 738.2224,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 738.2224
+        },
+        "react": {
+            "firstContentfulPaint": 1258.46735,
+            "largestContentfulPaint": 1455.9539,
+            "firstMeaningfulPaint": 1258.46735,
+            "speedIndex": 1258.46735,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.82245,
+            "maxPotentialFid": 137,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1258.46735
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 747.06985,
+            "largestContentfulPaint": 747.06985,
+            "firstMeaningfulPaint": 747.06985,
+            "speedIndex": 747.06985,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 747.06985
+        },
+        "next": {
+            "firstContentfulPaint": 746.19665,
+            "largestContentfulPaint": 746.19665,
+            "firstMeaningfulPaint": 746.19665,
+            "speedIndex": 746.19665,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 746.19665
+        },
+        "react": {
+            "firstContentfulPaint": 1230.60935,
+            "largestContentfulPaint": 1462.6781,
+            "firstMeaningfulPaint": 1230.60935,
+            "speedIndex": 1230.60935,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 58.53645000000006,
+            "maxPotentialFid": 120,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1230.60935
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 692.1564,
+            "largestContentfulPaint": 692.1564,
+            "firstMeaningfulPaint": 692.1564,
+            "speedIndex": 692.1564,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 1,
+            "maxPotentialFid": 52,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 692.1564
+        },
+        "next": {
+            "firstContentfulPaint": 650.38885,
+            "largestContentfulPaint": 748.38885,
+            "firstMeaningfulPaint": 650.38885,
+            "speedIndex": 650.38885,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 48,
+            "maxPotentialFid": 98,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 748.38885
+        },
+        "react": {
+            "firstContentfulPaint": 1241.0961000000002,
+            "largestContentfulPaint": 1455.7223000000001,
+            "firstMeaningfulPaint": 1241.0961000000002,
+            "speedIndex": 1241.0961000000002,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.69870000000003,
+            "maxPotentialFid": 128,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1241.0961000000002
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 744.34055,
+            "largestContentfulPaint": 744.34055,
+            "firstMeaningfulPaint": 744.34055,
+            "speedIndex": 744.34055,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 744.34055
+        },
+        "next": {
+            "firstContentfulPaint": 652.55265,
+            "largestContentfulPaint": 744.55265,
+            "firstMeaningfulPaint": 652.55265,
+            "speedIndex": 652.55265,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 42,
+            "maxPotentialFid": 92,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 744.55265
+        },
+        "react": {
+            "firstContentfulPaint": 1215.8551,
+            "largestContentfulPaint": 1450.0444,
+            "firstMeaningfulPaint": 1215.8551,
+            "speedIndex": 1215.8551,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 54.95170000000007,
+            "maxPotentialFid": 118.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1215.8551
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 739.16705,
+            "largestContentfulPaint": 739.16705,
+            "firstMeaningfulPaint": 739.16705,
+            "speedIndex": 739.16705,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 739.16705
+        },
+        "next": {
+            "firstContentfulPaint": 651.27895,
+            "largestContentfulPaint": 763.27895,
+            "firstMeaningfulPaint": 651.27895,
+            "speedIndex": 651.27895,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 62,
+            "maxPotentialFid": 112,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 763.27895
+        },
+        "react": {
+            "firstContentfulPaint": 1213.3009,
+            "largestContentfulPaint": 1449.8297,
+            "firstMeaningfulPaint": 1213.3009,
+            "speedIndex": 1213.3009,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.10030000000006,
+            "maxPotentialFid": 117.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1213.3009
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 735.06505,
+            "largestContentfulPaint": 735.06505,
+            "firstMeaningfulPaint": 735.06505,
+            "speedIndex": 735.06505,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.06505
+        },
+        "next": {
+            "firstContentfulPaint": 699.20965,
+            "largestContentfulPaint": 699.20965,
+            "firstMeaningfulPaint": 699.20965,
+            "speedIndex": 699.20965,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 47,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 699.20965
+        },
+        "react": {
+            "firstContentfulPaint": 1228.62115,
+            "largestContentfulPaint": 1455.5582,
+            "firstMeaningfulPaint": 1228.62115,
+            "speedIndex": 1228.62115,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.20704999999998,
+            "maxPotentialFid": 122,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1228.62115
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 733.3211,
+            "largestContentfulPaint": 733.3211,
+            "firstMeaningfulPaint": 733.3211,
+            "speedIndex": 733.3211,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 733.3211
+        },
+        "next": {
+            "firstContentfulPaint": 652.12,
+            "largestContentfulPaint": 747.12,
+            "firstMeaningfulPaint": 652.12,
+            "speedIndex": 652.12,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 45,
+            "maxPotentialFid": 95,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 747.12
+        },
+        "react": {
+            "firstContentfulPaint": 1232.22275,
+            "largestContentfulPaint": 1450.72635,
+            "firstMeaningfulPaint": 1232.22275,
+            "speedIndex": 1232.22275,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.070949999999925,
+            "maxPotentialFid": 126.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1232.22275
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 740.1195,
+            "largestContentfulPaint": 740.1195,
+            "firstMeaningfulPaint": 740.1195,
+            "speedIndex": 740.1195,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 740.1195
+        },
+        "next": {
+            "firstContentfulPaint": 654.0942,
+            "largestContentfulPaint": 747.0942,
+            "firstMeaningfulPaint": 654.0942,
+            "speedIndex": 654.0942,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 42,
+            "maxPotentialFid": 93,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 745.0942
+        },
+        "react": {
+            "firstContentfulPaint": 1214.78535,
+            "largestContentfulPaint": 1453.5372000000002,
+            "firstMeaningfulPaint": 1214.78535,
+            "speedIndex": 1214.78535,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.92845,
+            "maxPotentialFid": 116.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1214.78535
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 739.98915,
+            "largestContentfulPaint": 739.98915,
+            "firstMeaningfulPaint": 739.98915,
+            "speedIndex": 739.98915,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 739.98915
+        },
+        "next": {
+            "firstContentfulPaint": 735.37205,
+            "largestContentfulPaint": 735.37205,
+            "firstMeaningfulPaint": 735.37205,
+            "speedIndex": 735.37205,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 735.37205
+        },
+        "react": {
+            "firstContentfulPaint": 1222.4171000000001,
+            "largestContentfulPaint": 1454.467,
+            "firstMeaningfulPaint": 1222.4171000000001,
+            "speedIndex": 1222.4171000000001,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.8057,
+            "maxPotentialFid": 119.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1222.4171000000001
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 729.20785,
+            "largestContentfulPaint": 729.20785,
+            "firstMeaningfulPaint": 729.20785,
+            "speedIndex": 729.20785,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 729.20785
+        },
+        "next": {
+            "firstContentfulPaint": 679.0697,
+            "largestContentfulPaint": 761.0697,
+            "firstMeaningfulPaint": 679.0697,
+            "speedIndex": 679.0697,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 32,
+            "maxPotentialFid": 82,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 761.0697
+        },
+        "react": {
+            "firstContentfulPaint": 1224.8085999999998,
+            "largestContentfulPaint": 1453.0737,
+            "firstMeaningfulPaint": 1224.8085999999998,
+            "speedIndex": 1224.8085999999998,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 55.936199999999985,
+            "maxPotentialFid": 121.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1224.8085999999998
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 685.3058,
+            "largestContentfulPaint": 1127.6116,
+            "firstMeaningfulPaint": 685.3058,
+            "speedIndex": 685.3058,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 46,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 685.3058
+        },
+        "next": {
+            "firstContentfulPaint": 736.9225,
+            "largestContentfulPaint": 736.9225,
+            "firstMeaningfulPaint": 736.9225,
+            "speedIndex": 736.9225,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 736.9225
+        },
+        "react": {
+            "firstContentfulPaint": 1224.744225,
+            "largestContentfulPaint": 1611.6622749999997,
+            "firstMeaningfulPaint": 1224.744225,
+            "speedIndex": 1224.744225,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 57.24132499999996,
+            "maxPotentialFid": 118.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1224.744225
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 686.13555,
+            "largestContentfulPaint": 686.13555,
+            "firstMeaningfulPaint": 686.13555,
+            "speedIndex": 686.13555,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 46,
+            "cumulativeLayoutShift": 0.016451822916666668,
+            "firstCpuIdle": 686.13555
+        },
+        "next": {
+            "firstContentfulPaint": 742.2137,
+            "largestContentfulPaint": 742.2137,
+            "firstMeaningfulPaint": 742.2137,
+            "speedIndex": 742.2137,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 742.2137
+        },
+        "react": {
+            "firstContentfulPaint": 1215.5855000000001,
+            "largestContentfulPaint": 1611.13925,
+            "firstMeaningfulPaint": 1215.5855000000001,
+            "speedIndex": 1215.5855000000001,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.52850000000001,
+            "maxPotentialFid": 114.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1215.5855000000001
+        }
+    },
+    {
+        "gatsby": {
+            "firstContentfulPaint": 739.98445,
+            "largestContentfulPaint": 739.98445,
+            "firstMeaningfulPaint": 739.98445,
+            "speedIndex": 739.98445,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 0,
+            "maxPotentialFid": 16,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 739.98445
+        },
+        "next": {
+            "firstContentfulPaint": 650.2815,
+            "largestContentfulPaint": 738.2815,
+            "firstMeaningfulPaint": 650.2815,
+            "speedIndex": 650.2815,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 38,
+            "maxPotentialFid": 88,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 738.2815
+        },
+        "react": {
+            "firstContentfulPaint": 1215.462,
+            "largestContentfulPaint": 1606.973375,
+            "firstMeaningfulPaint": 1215.462,
+            "speedIndex": 1215.462,
+            "estimatedInputLatency": 12.8,
+            "totalBlockingTime": 56.153999999999996,
+            "maxPotentialFid": 116.5,
+            "cumulativeLayoutShift": 0,
+            "firstCpuIdle": 1215.462
+        }
+    }
+]

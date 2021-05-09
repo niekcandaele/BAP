@@ -21,10 +21,5 @@ describe('Reports', () => {
                 pwa: 0,
             });
         })
-
-        it('Accessibility report', () => {
-            cy.visit(app)
-            cy.pa11y();
-        })
     }
 })
