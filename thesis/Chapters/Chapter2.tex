@@ -13,15 +13,16 @@
 One of the main bottlenecks with the current approach is the requests to the CMS. When a user visits the site, they first have to load the basic static files from the server. 
 This will only load a skeleton of the application though. Depending on what domain name the user is visiting (companyX.stampix.com or companyY.stampix.com), the application will send requests to the CMS to load appropriate images and texts.
 
-This whole process results in a long time before the user can actually start using the application. We aim to create a solution that will make this significantly faster.
+This whole process results in a long time before the user can actually start using the application. This paper aims to create a solution that will make this significantly faster.
 
 \section{Modularity}
 
 Stampix has many clients and every client has individual needs. One client might want to block any NSFW pictures while another doesn't mind these types of pictures and instead wants different functionality.
-This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this thesis. 
-However, it is an important point and we must make sure the solution we create can support this.
+This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this paper. 
+However, it is an important point and the solution this paper proposes must support it.
 
 \section{Deployment}
 
 To support different assets for different clients, the current implementation loads the assets during runtime. 
-If we move loading assets from runtime to build time with a static site generator, we will need to develop a methodology for deploying the application.
+If loading assets is moved from runtime to build time with a static site generator, the methodology for deploying the application must support this. 
+In effect, this means that requests to the CMS will happen during the build scripts.

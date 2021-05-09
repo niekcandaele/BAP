@@ -43,31 +43,31 @@ Gatsby\footnote{https://www.gatsbyjs.com/} is a static site generator at heart. 
 
 Cypress\footnote{https://www.cypress.io/} is a tool made to run automated end-to-end tests in a browser. 
 
-We will use Cypress for it's simple API to control browsers programmatically. It will allow us to define the performance benchmarks as code and easily run that on the different PoC applications.
+This research will use Cypress for it's simple API to control browsers programmatically. It will allow us to define the performance benchmarks as code and easily run that on the different PoC applications.
 
 \section{Strapi}
 
-Strapi\footnote{https://strapi.io/} is an open-source CMS. While Stampix uses a different CMS, we chose Strapi because it is easy to run locally. 
-Because we are running the CMS locally, it is much easier to create a configuration that we can reuse across different deployments. 
+Strapi\footnote{https://strapi.io/} is an open-source CMS. While Stampix uses a different CMS, this research chose Strapi because it is easy to run locally. 
+Because the pipeline is running the CMS locally, it is much easier to create a configuration that the pipeline can reuse across different deployments. 
 
 
 \section{Docker}
 
-Docker\footnote{https://www.docker.com/} is a tool to run and manage containers. We will 'Dockerize' all of the components of our benchmarking pipeline: the PoC applications, Strapi and even Cypress. 
-By using containers for this, we can create a pipeline that is platform independent. You, the reader, can run the benchmark on your own computer and you will see similar results we got in this paper.
+Docker\footnote{https://www.docker.com/} is a tool to run and manage containers. All of the components of our benchmarking pipeline will be "Dockerized": the PoC applications, Strapi and even Cypress. 
+By using containers for this, pipelines can be created that are platform independent. You, the reader, can run the benchmark on your own computer and you will see similar results as presented in this paper.
 
 
 \section{Methodology}
 
-To make an educated decision on what framework provides the best performance, we will create a benchmarking pipeline. 
-We will create small, proof of concept applications in the above mentioned frameworks which try to replicate real world behavior as close as possible.
+To make an educated decision on what framework provides the best performance, a benchmarking pipeline will be created. 
+Small, proof of concept applications will be created in the above mentioned frameworks which try to replicate real world behavior as close as possible.
 
 Each PoC application must at least be able to load some assets from the CMS and perform an API request to the backend.
 
 
 \section{Metrics}
 
-Now that we have defined how we will create and run this performance benchmark, we can define some key metrics.
+Now that it is defined how this performance benchmark will be created and ran, key metrics can be defined.
 
 \subsection{Largest contentful paint}
 
@@ -77,8 +77,8 @@ Now that we have defined how we will create and run this performance benchmark, 
 \end{quote}
 
 LCP is an important metric for us. In the original application, this would happen after the request to the CMS. 
-That means LCP will be rather late for the average use. 
-By using static site generators like we will we can make sure all of the content we want to show the user is served from a very fast CDN.
+That means LCP will be rather late for the average use.
+By using static site generators, it can be assured that all of the content shown to users is server from a very fast CDN. 
 
 \subsection{First input delay}
 
@@ -94,8 +94,8 @@ https://web.dev/cls/
 When a user visits the site, one of the main reasons they have to wait for a site to load is network connectivity. 
 If a user has a faster network connection, they can download the static files of the website faster.
 This is a part of the system where Stampix has very little control, it is impossible to give the users a better network connection. 
-However, what we can do, is make sure that the user has to download the smallest amount of data as possible. 
-To achieve this, we can use a technique called minification to take our front end code and make it smaller.
+However, what can be done, is make sure that the user has to download the smallest amount of data as possible. 
+To achieve this, a technique called minification can be used to take our front end code and make it smaller.
 
 Code written by developers might look something like:
 
