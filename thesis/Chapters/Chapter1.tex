@@ -8,7 +8,22 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Original state}
+Software development typically consists of a few phases. Initially, developers write code on their local machines. 
+Once their new code works, they'll push it to a (git) server. 
+There, the code will be reviewed by colleagues and when everyone is happy the new code is ready to deploy, it will get merged to a 'main' branch.
+At this point, the operations team takes over and makes sure the new code is live on the production servers.
+
+As you might notice, there's a lot of manual work involved in this process. Wouldn't it be great if steps can be automated?
+
+This is where CI/CD comes in. It is a very broad term but in practice it usually boils down to automating as much as possible and leveraging tools or workflows to achieve that.
+In effect, this might mean that during the review phase, the code is automatically compiled and unit tests ran. If the code does not compile, reviewers know instantly that the code is not ready yet.
+
+Continuous delivery \cite{Humble-CD} takes this even further. With CD, once the code has been reviewed and is considered ready, scripts will automatically deploy the new code.
+This significantly reduces the time and effort required to deploy new features.
+
+Stampix takes advantage of CI/CD in their development workflows.
+
+\section{Initial state}
 
 \begin{figure}[h!]
 	\includegraphics[scale=0.25]{original_flow}
