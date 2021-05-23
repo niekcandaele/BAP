@@ -15,17 +15,23 @@ This will only load a skeleton of the application though. Depending on what doma
 
 This whole process results in a long time before the user can actually start using the application. This paper aims to create a solution that will make this significantly faster.
 
-\section{Modularity}
-
-Stampix has many clients and every client has individual needs. One client might want to block any NSFW pictures while another doesn't mind these types of pictures and instead wants different functionality.
-This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this paper. 
-However, it is an important point and the solution this paper proposes must support it.
-
-\section{Operation during runtime}
-
 To support different assets for different clients, the current implementation loads the assets during runtime. 
 If loading assets is moved from runtime to build time with a static site generator, the methodology for deploying the application must support this. 
 In effect, this means that requests to the CMS will happen during the build scripts.
 
 The main disadvantage of making this distinction during runtime is that users have to wait for the logic and requests to have ran.
 By selecting the required assets during build time, users are instantly served the right assets which boosts performance.
+
+\section{Modularity}
+
+Stampix has many clients and every client has individual needs. One client might want to block any NSFW pictures while another doesn't mind these types of pictures and instead wants different functionality.
+This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this paper. 
+However, it is an important point and the solution this paper proposes must support it.
+
+\section{Summing up}
+
+\begin{itemize}
+	\item How can we improve the performance of the web application during runtime?
+	\item How do we make sure that the solution is flexible enough to support all (or as many as possible) current and future, unknown requirements
+	\item How does the process of deployment (CI/CD) change?
+\end{itemize}
