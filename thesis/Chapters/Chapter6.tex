@@ -9,4 +9,13 @@ With any such decision in technology, the answer is: it depends.
 In the situation of Stampix, a static site generator is definitely beneficial. 
 The ability to fetch assets and build a production ready bundle during runtime will mean a massive performance increase for Stampix.
 
-By leveraging IaC, the manual steps of deployment can be automated.
+During the paper, 2 static site generators were looked at: Gatsby and Next. 
+While they both had similar results in the performance benchmark (Next scoring slightly worse), I would recommend using Next.
+Next can work as a static site generator, as a traditional app or even a hybrid between the two.
+This means that Next is the most flexible, allowing Stampix to implement whatever features are necessary.
+If Gatsby is chosen, it will not offer the same flexibility and the development team might need to create some ugly "hacks" to make it work.
+Furthermore, while developing the PoC applications, I noticed it was easier to find help around Next than Gatsby.
+This is a completely subjective point but an important one.
+
+By leveraging IaC, the manual steps of deployment can be automated. 
+This is very important, whenever content changes in the CMS, a new build should be triggered, which means builds and deployments happen very frequently.
