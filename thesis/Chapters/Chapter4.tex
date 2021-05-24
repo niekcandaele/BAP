@@ -2,6 +2,41 @@
 
 \label{Chapter4} 
 
+\section{Creating the benchmark}
+
+\subsection{Lighthouse}
+
+In order to measure the performance of a web site, several techniques exist. One of those is a Lighthouse report. 
+This report encompasses lots of different metrics which each tell you more about a website. 
+Not all of these metrics are performance metrics, some are an indicator for accessibility, others for search engine optimization or other miscellaneous metrics.
+Which metrics we will analyse was expanded upon in the previous chapter but I wanted to reiterate why I chose Lighthouse.
+
+Lighthouse is an open source solution which can be ran locally. 
+A lot of alternatives to Lighthouse are proprietary, hosted solutions. 
+This makes it a lot harder to benchmark the PoCs because they should all get deployed and be accessible from the internet. 
+During development of this benchmark, it helped a lot to be able to instantly run a new benchmark with the new code without having to go through a full deployment.
+
+A negative about Lighthouse is that is difficult to run on browsers other than Google Chrome. While it is technically possible to do so, I did not implement this and opted to use a single browser for testing.
+
+\subsection{Docker}
+
+Docker was used to run the benchmark. Every PoC application has a Dockerfile which details the steps of the build. 
+Why use Docker when you could also just run the applications directly on the host?
+Because using Docker to create images of the applications makes for a reproducible build and allows me to control every parameter of the process.
+In theory, it does not matter whether the images are built on Linux or Windows. 
+It does not matter which version of node is locally installed, because the version is specified in the Dockerfile.
+
+Furthermore, Docker not only provides more control over the build, it also gives more control and configurability to the runtime. 
+By using Docker Compose, I can dictate how containers can talk to each other.
+
+All of this together makes for a more stable and deterministic build process. 
+It allows other people, on different machines, to run the same benchmark easily and observe similar results.
+
+It should be noted that the Dockerfiles for each PoC has some slight differences.
+While the PoCs are all websites, running them in Docker is not the same. 
+In effect, for the Next PoC, the built-in next web server was used while for the Gatsby PoC, an intermediate container running Nginx was used.
+
+\section{Running the benchmark}
 
 In order to see which of the web technologies scores best, a performance benchmark was created. 
 This benchmark uses Cypress to run a Lighthouse report for each PoC application.
@@ -13,23 +48,25 @@ The steps for running it are as follows:
 	      \begin{verbatim}
 			docker-compose -f docker-compose-deps.yml up -d
 	      \end{verbatim}
-	      This will start a Postgres database and Strapi, the CMS. These must be ran before the others since the build scripts for the web applications require Strapi.
+	      This will start a Postgres database and Strapi, the CMS. 
+	      These must be ran before the others since the build scripts for the web applications require Strapi.
+	      The git repo for this paper includes bootstrapped data for Strapi, with a campaign already configured, complete with starting data.
 	\item Build all the PoC applications
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	
 	      \begin{verbatim}
 			docker-compose -f docker-compose-bench.yml up -d
 	      \end{verbatim}
 	      This will build the applications and start the containers. 
 	      You can access each application in the browser, starting with port 3000. (http://localhost:3000, http://localhost:3001, \dots)
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	\item  
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      \begin{verbatim}
 			cd packages/benchmark
 			npm ci
 			npm run cypress:open
 	      \end{verbatim}
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      This will install Cypress and its dependencies. 
 	      After running the final command, Cypress will open and you are able to run the benchmark.
 	      Reports with raw data will be saved in the packages/benchmark/reports directory.
