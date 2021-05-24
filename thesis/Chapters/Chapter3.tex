@@ -16,7 +16,8 @@ Furthermore, this approach allows for more aggressive and efficient caching.
 
 \subsection{Nextjs}
 
-Nextjs\footnote{https://nextjs.org/} is a React framework. Not explicitly a static site generator but has support for it. Nextjs has support for a ton of interesting features, 
+Nextjs\footnote{https://nextjs.org/} is a React framework. Not explicitly a static site generator but has support for it. 
+Nextjs has support for a ton of interesting features, 
 
 \begin{itemize}
 	\item Image optimization
@@ -24,6 +25,32 @@ Nextjs\footnote{https://nextjs.org/} is a React framework. Not explicitly a stat
 	\item Internationalization
 	\item Typescript support
 \end{itemize}
+
+It is important to note that Nextjs heavily uses server side rendering. If used in the end result, the deployment should support this. 
+This can be achieved by using Lambda, Lambda@edge or Cloudfront functions.  
+
+\subsubsection{Serverless server side rendering}
+
+As noted, Nextjs uses server side rendering. 
+This improves performance as it allows the server to render a page instead of the client.
+Servers can have a lot more computing power than the average consumer workstation or mobile.
+
+This does mean that a lot of round-trips will happen between the client and the server. 
+Since performance is a key component of the solution here, the solution should try to minimize this.
+
+Luckily, AWS offers a few solutions for this. 
+The simplest solution is to use regular lambda functions. 
+This will work fine, however the location where this lambda function runs might be very far away from the client, resulting in a larger than desired network latency.
+This can be mitigated by using the Lambda@Edge technology from AWS. Instead of running the lambda function in the main AWS data center, it instead runs in the regional edge location.
+Regional edge locations are significantly closer to the user, which helps with latency but it is still far removed.
+Going one step further, AWS also offers Cloudfront functions. These are functions that run the closest to the client as currently possible.
+
+\begin{figure}[htb!]
+	\includegraphics[scale=0.5]{@edge}{}
+	\caption{AWS solutions for running code @edge \cite*{aws@edge}}
+	\label{fig:@edge}
+\end{figure}
+
 
 \subsection{Gatsby}
 
