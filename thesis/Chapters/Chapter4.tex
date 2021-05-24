@@ -15,21 +15,21 @@ The steps for running it are as follows:
 	      \end{verbatim}
 	      This will start a Postgres database and Strapi, the CMS. These must be ran before the others since the build scripts for the web applications require Strapi.
 	\item Build all the PoC applications
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	
 	      \begin{verbatim}
 			docker-compose -f docker-compose-bench.yml up -d
 	      \end{verbatim}
 	      This will build the applications and start the containers. 
 	      You can access each application in the browser, starting with port 3000. (http://localhost:3000, http://localhost:3001, \dots)
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	\item  
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      \begin{verbatim}
 			cd packages/benchmark
 			npm ci
 			npm run cypress:open
 	      \end{verbatim}
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      This will install Cypress and its dependencies. 
 	      After running the final command, Cypress will open and you are able to run the benchmark.
 	      Reports with raw data will be saved in the packages/benchmark/reports directory.
@@ -47,6 +47,8 @@ It can be run with
 Results from these benchmarking runs can be found in the file packages/benchmark/finalReport.json
 
 Finally, you will find a Jupyter notebook that does some number crunching and renders the plots at packages/data-analysis/analysis.ipynb
+
+Results with raw data can be found in appendix \ref{appendix:lighthouse-report}
 
 \section{Largest contentful paint}
 
