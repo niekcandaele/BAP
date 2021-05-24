@@ -64,21 +64,21 @@ The steps for running it are as follows:
 	      These must be ran before the others since the build scripts for the web applications require Strapi.
 	      The git repo for this paper includes bootstrapped data for Strapi, with a campaign already configured, complete with starting data.
 	\item Build all the PoC applications
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	
 	      \begin{verbatim}
 			docker-compose -f docker-compose-bench.yml up -d
 	      \end{verbatim}
 	      This will build the applications and start the containers. 
 	      You can access each application in the browser, starting with port 3000. (http://localhost:3000, http://localhost:3001, \dots)
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	\item  
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      \begin{verbatim}
 			cd packages/benchmark
 			npm ci
 			npm run cypress:open
 	      \end{verbatim}
-	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
+	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      	      
 	      This will install Cypress and its dependencies. 
 	      After running the final command, Cypress will open and you are able to run the benchmark.
 	      Reports with raw data will be saved in the packages/benchmark/reports directory.
@@ -124,6 +124,20 @@ Static site generators will perform these computations during the build step.
 In figure \ref{fig:total_blocking_time}, similar results to the previous figure can be observed
 The traditional React application scores much less favorably than the static site generators.
 Interestingly, the results for Next seem to spike a lot.
+
+
+\section{Max potential first input delay}
+
+\begin{figure}[htb!]
+	\includegraphics[scale=0.5]{max_potential_first_input_delay}
+	\caption{Results of performance benchmark for max potential first input delay}
+	\label{fig:max_potential_first_input_delay}
+\end{figure}
+
+In figure \ref{fig:max_potential_first_input_delay}, similar results can be observed. 
+The traditional React application scores the worst while the static site generators score significantly better.
+It's worth noting that all of the PoCs exhibit irregular measurements, FID fluctuates a lot.
+However, on average, the Gatsby PoC scores the best for this metric out of all the PoCs.
 
 \section{Bundle size}
 
