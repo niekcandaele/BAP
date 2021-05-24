@@ -49,6 +49,7 @@ In the proof of concept, this configuration is a static JSON document (see the f
 It could come from the CMS or even a custom application. 
 The goal is to make sure that non-technical people can create deployments. This means that they should not be editing straight JSON files.
 Instead, the person creating the deployment should be guided through a form in order to create this configuration. 
+When submitting this form, a message will be sent to Stampix' CI/CD pipeline to trigger a new build. 
 
 To make this experience as smooth as possible, a good option is creating a custom application to guide the non-technical teammembers in creating these configs. 
 However, the implementation of this is outside the scope of this paper
@@ -63,3 +64,5 @@ The built files get stored inside S3 \footnote{https://aws.amazon.com/s3/}. Ever
 
 The script will also provision TLS certificates via AWS. 
 Finally, a CloudFront \footnote{https://aws.amazon.com/cloudfront/} distribution is set up. This will make sure the static files get served when someone visits our sites.
+
+The implementation of this can be found in the directory packages/infra
