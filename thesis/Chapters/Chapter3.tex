@@ -53,7 +53,7 @@ Because the pipeline is running the CMS locally, it is much easier to create a c
 
 Docker\footnote{https://www.docker.com/} is a tool to run and manage containers. All of the components of our benchmarking pipeline will be "Dockerized": the PoC applications, Strapi and even Cypress. 
 By using containers for this, pipelines can be created that are platform independent. 
-You, the reader, can run the benchmark on your own computer and you will see similar results as presented in this paper. See the Docker compose file on how to do this.
+You, the reader, can run the benchmark on your own computer and you will see similar results as presented in this paper. This is explained more thoroughly in chapter \ref{Chapter4}
 
 
 \section{Methodology}
@@ -77,7 +77,7 @@ Now that it is defined how this performance benchmark will be created and ran, k
 
 LCP is an important metric for us. In the original application, this would happen after the request to the CMS. 
 That means LCP will be rather late for the average use.
-By using static site generators, it can be assured that all of the content shown to users is server from a very fast CDN. 
+By using static site generators, it can be assured that all of the content shown to users is served from a very fast CDN. 
 
 \subsection{First input delay}
 
