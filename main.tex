@@ -43,9 +43,11 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{mathpazo} % Use the Palatino font by default
 
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage{listings}
 
+\usepackage[backend=biber, style=ieee,natbib=true]{biblatex}
 \addbibresource{example.bib} % The filename of the bibliography
+
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
@@ -98,15 +100,15 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{titlepage}
 	\begin{center}
-																
+																																																																																
 		\vspace*{.06\textheight}
 		{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
 		\textsc{\Large Thesis}\\[0.5cm] % Thesis type
-																
+																																																																																
 		\HRule \\[0.4cm] % Horizontal line
 		{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
 		\HRule \\[1.5cm] % Horizontal line
-																 
+																																																																																 
 		\begin{minipage}[t]{0.4\textwidth}
 			\begin{flushleft} \large
 				\emph{Author:}\\
@@ -119,28 +121,17 @@ headsepline, % Uncomment to get a line under the header
 				\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
 			\end{flushright}
 		\end{minipage}\\[3cm]
-																 
-																
-																 
+																																																																																 
+																																																																																
+																																																																																 
 		\vfill
-																
+																																																																																
 		{\large \today}\\[4cm] % Date
 		%\includegraphics{Logo} % University/department logo - uncomment to place it
-																 
+																																																																																 
 		\vfill
 	\end{center}
 \end{titlepage}
-
-
-%----------------------------------------------------------------------------------------
-%	QUOTATION PAGE
-%----------------------------------------------------------------------------------------
-
-\vspace*{0.2\textheight}
-
-\noindent\enquote{\itshape Funny or thought provoking quote goes here}\bigbreak
-
-\hfill Someone, somewhere
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -148,7 +139,11 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 	\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-	A case study and practical implementation of a white-labeled web application. Starting with an existing application, proceeding with analysis of the current implementation and problems, investigating potential solutions and finally implementing them
+	A case study and practical implementation of a white-labeled web application. 
+	Starting with an existing application, proceeding with an analysis of the current implementation and problems.
+	Moving on to investigating potential solutions, including a performance benchmark of several web technologies 
+	where static site generators outperform a traditional React application
+	and finally creating an implementation with static site generators, AWS CDK (S3 + Cloudfront CDN) and Strapi.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -157,7 +152,9 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{acknowledgements}
 	\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-	Thanks to Thomas Clauwaert, Serge Morel, en de rest \ldots :)
+	Thanks to Thomas Clauwaert for the continued support and feedback in writing this paper.
+						
+	Thanks to Serge Morel for the guidance during my internship and bringing up new ideas to include in this paper.
 \end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
@@ -175,7 +172,7 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
-								
+																																								
 	\textbf{AWS} & \textbf{A}mazon \textbf{W}eb \textbf{S}ervices\\
 	\textbf{CMS} & \textbf{C}ontent \textbf{M}anagement \textbf{S}ystem\\
 	\textbf{IaC} & \textbf{I}nfrastructure \textbf{a}s \textbf{C}ode\\
@@ -184,15 +181,12 @@ headsepline, % Uncomment to get a line under the header
 	\textbf{CLS} & \textbf{C}umulative \textbf{L}ayout \textbf{S}hift\\
 	\textbf{CDN} & \textbf{C}ontent \textbf{D}istribution \textbf{N}etwork\\
 	\textbf{CDK} & \textbf{C}loud \textbf{D}evelopment \textbf{K}it\\
-								
+	\textbf{CI} & \textbf{C}ontinuous \textbf{I}ntegration\\
+	\textbf{CD} & \textbf{C}ontinuous \textbf{D}eployment\\
+	\textbf{DOM} & \textbf{D}ocument \textbf{O}bject \textbf{M}odel\\
+													
+																																								
 \end{abbreviations}
-
-
-%----------------------------------------------------------------------------------------
-%	DEDICATION
-%----------------------------------------------------------------------------------------
-
-\dedicatory{For/Dedicated to/To my\ldots} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
@@ -210,6 +204,7 @@ headsepline, % Uncomment to get a line under the header
 \include{Chapters/Chapter3}
 \include{Chapters/Chapter4} 
 \include{Chapters/Chapter5} 
+\include{Chapters/Chapter6} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
