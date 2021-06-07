@@ -16,11 +16,11 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-      - run: npm ci
-      - run: node index.js
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - run: git config user.email "niekcandaele@gmail.com"
-      - run: git config user.name "niekcandaele"
-      - run: git add reports/*.md
-      - run: git diff-index --quiet HEAD || (git commit -m "Update weekly reports" && git push)
+#      - run: npm ci
+#      - run: node index.js
+#        env:
+#          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+#      - run: git config user.email "niekcandaele@gmail.com"
+#      - run: git config user.name "niekcandaele"
+#      - run: git add reports/*.md
+#      - run: git diff-index --quiet HEAD || (git commit -m "Update weekly reports" && git push)

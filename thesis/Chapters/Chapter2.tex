@@ -13,15 +13,37 @@
 One of the main bottlenecks with the current approach is the requests to the CMS. When a user visits the site, they first have to load the basic static files from the server. 
 This will only load a skeleton of the application though. Depending on what domain name the user is visiting (companyX.stampix.com or companyY.stampix.com), the application will send requests to the CMS to load appropriate images and texts.
 
-This whole process results in a long time before the user can actually start using the application. We aim to create a solution that will make this significantly faster.
+This whole process results in a long time before the user can actually start using the application. This paper aims to create a solution that will make this significantly faster.
+
+To support different assets for different clients, the current implementation loads the assets during runtime. 
+If loading assets is moved from runtime to build time with a static site generator, the methodology for deploying the application must support this. 
+In effect, this means that requests to the CMS will happen during the build scripts.
+
+The main disadvantage of making this distinction during runtime is that users have to wait for the logic and requests to have ran.
+By selecting the required assets during build time, users are instantly served the right assets which boosts performance.
 
 \section{Modularity}
 
 Stampix has many clients and every client has individual needs. One client might want to block any NSFW pictures while another doesn't mind these types of pictures and instead wants different functionality.
-This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this thesis. 
-However, it is an important point and we must make sure the solution we create can support this.
+This means the web application must remain modular enough to support these different "add-ons". This problem can be solved by writing code that supports this and the exact implementation is outside the scope of this paper. 
+However, it is an important point and the solution this paper proposes must support it.
 
-\section{Deployment}
 
-To support different assets for different clients, the current implementation loads the assets during runtime. 
-If we move loading assets from runtime to build time with a static site generator, we will need to develop a methodology for deploying the application.
+\section{Changes to CI/CD}
+
+Moving the process of loading assets from the CMS to build time rather than run time means some changes will need to happen to the CI/CD process.
+Whenever new code is written for the web app, builds must be started for each client. This means, if Stampix has 100 active clients, 100 builds must happen.
+In the past, this was only 1 build. These deployments cannot happen serially. If Stampix scales to thousands of active clients, each deploy will take several hours or even days to complete.
+Instead, the CI/CD process should work in parallel to create a build for every client. This will ensure speedy deployments (in theory, a deployment will take as much time as one build, regardless of how many builds actually happen).
+
+Furthermore, when changes happen to the assets inside the CMS, it should also start new builds. In practice, this could be implemented with a webhook.
+
+When using a webhook, the CMS will send a message to a web service, controlled by Stampix. This service will validate the message, format it as needed and then forward it to the CI platform which will start the pipeline.
+
+\section{Summing up}
+
+\begin{itemize}
+	\item How can we improve the performance of the web application during runtime?
+	\item How do we make sure that the solution is flexible enough to support all (or as many as possible) current and future, unknown requirements?
+	\item How does the process of deployment (CI/CD) change?
+\end{itemize}

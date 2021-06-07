@@ -22,3 +22,9 @@ services:
       NEXT_PUBLIC_STRAPI_API_URL: http://127.0.0.1:1337
     ports:
       - "127.0.0.1:3002:3000"
+  react:
+    build: 
+      context: ./packages/react-traditional
+      network: host
+    ports:
+      - "127.0.0.1:3003:3000"
